@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./dashboard/dashboard.css">
+  <link rel="stylesheet" href="./mario-run/mario-run.css">
+
+  <script src="./js/script.js" defer></script>
+  <script src="./js/rotas.js" defer></script>
+
+  <link rel="stylesheet" href="./start/start.css">
+
+  
+
+  <title>Mario Jump</title>
+
+</head>
+
+<body>
+  <route rota="dashboard" class="route">
+    <div class="game-board-dashboard">
+      <img src="./images/super-mario-run.png" class="super-mario-dashboard">
+      <img src="./images/clouds.png" class="clouds-dashboard">
+      <img src="./images/mario.gif" class="mario-dashboard">
+      <img src="./images/pipe.png" class="pipe-dashboard">
+    </div>
+    <div class="bottom-div-dashboard">
+       <img src="./images/start.png" class="start-button" onclick="marioJump()">
+     </div>
+    </route>
+
+    <route rota="mario-run" class="route"> 
+    <div class="game-board">
+      <img src="./images/gameover-logo.png" class="gameover-logo invisible"></img>
+      <img src="./images/clouds.png" class="clouds">
+      <img src="./images/mario.gif" class="mario">
+      <img src="./images/pipe.png" class="pipe">
+     </div> 
+    <div class="bottom-div">
+      <span class="score">
+      </span>
+      <img src="./images/start.png" class="restart-button invisible" onclick="marioJump()">
+    </div>
+   </route> 
+</body>
+
+</html>
