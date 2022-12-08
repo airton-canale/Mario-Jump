@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: 'Score';
-    src: url('../SuperMario256.ttf') format('truetype');
+    src: url('../fonts/SuperMario256.ttf') format('truetype');
 }
 
 .score-jump {
@@ -55,7 +55,7 @@
 
 .bottom-div{
     background: linear-gradient(#87CEEB, #986cff);
-    height: 443px;
+    height: 470px;
 }
 
 .pipe{
