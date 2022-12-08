@@ -20,7 +20,7 @@
     src: url('../SuperMario256.ttf') format('truetype');
 }
 
-.score-jump{
+.score-jump {
     font-family: 'Score', 'Times', serif;
     font-weight: normal;
     margin-left: 38%;
@@ -31,10 +31,18 @@
     color: green;
 }
 
-.score-min{
+.score-min {
     padding: 3px;
-    font-size: 10px;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    right: 3rem !important;
+    top: 3rem !important;
+    font-size: 30px;
+    animation: none !important;
+    color: red;
+
 }
+
 .game-board {
     width: 100%;
     height: 500px;

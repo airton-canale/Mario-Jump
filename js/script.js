@@ -3,7 +3,6 @@ const pipe = document.querySelector('.pipe')
 const cloud = document.querySelector('.clouds')
 const gameOver = document.querySelector('.gameover-logo')
 const button = document.querySelector('.restart-button')
-const jumpScore = document.querySelector('.score')
 
 const jump = () => {
     mario.classList.add('jump')
@@ -25,18 +24,23 @@ const loop = setInterval(() => {
         
         pipe.style.animation = 'none';
         pipe.style.left = `${pipePosition}px`
-
+        
         mario.style.animation = 'none';
         mario.style.bottom = `${marioPosition}px`
-
+        
         mario.src = './images/game-over.png'
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
-
+        
         button.classList.remove('invisible')
         gameOver.classList.remove('invisible')
+        const jumpScore = document.querySelector('#score')
 
-        jumpScore.classList.add('invisible')
+        // jumpScore.classList.add('invisible')
+
+        jumpScore.classList.add('score-min') 
+        // jumpScore.classList.add('jump-min') 
+
 
 
         
@@ -57,7 +61,7 @@ let options = {
         if (!added) {
             score = score + 1
             added = true
-            document.querySelector('.score').innerHTML = `<h1 class="score-jump"> Score: ${score}</h1>`
+            document.querySelector('.score').innerHTML = `<h1 id="score" class="score-jump"> Score: ${score}</h1>`
         }
       }else{
           added = false
