@@ -35,11 +35,6 @@
 
  - This application was deployed with Github Pages 
 
-
- ```bash
-# Running deploy
-$ npm run deploy
-```
 <br>
 
 ```bash
